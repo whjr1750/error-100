@@ -13,7 +13,8 @@ recognition.onresult = function(event) {
 
  Content = event.results[0][0].transcript.toLowerCase();
    console.log(Content);
-   if (Content == "selfie.") {
+   if ((Content == "selfie.")||(Content == "selfie"))
+ {
     speak();
     }
 
